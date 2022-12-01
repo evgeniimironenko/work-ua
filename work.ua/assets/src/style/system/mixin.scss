@@ -1,0 +1,30 @@
+
+//image
+
+@mixin image-size {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: .5s;
+}
+
+//flex
+
+@mixin horizonCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin horizonCenterBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin verticalCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

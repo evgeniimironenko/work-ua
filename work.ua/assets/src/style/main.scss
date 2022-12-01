@@ -1,0 +1,28 @@
+@import "fonts";
+
+// Определение своих значений
+@import "variables";
+
+// Подключение нужных SCSS исходников Bootstrap 4
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
+
+
+// Подключение нужных SCSS исходников
+@import '../../../node_modules/normalize.css/normalize.css';
+
+//system
+@import "system/mixin";
+@import "system/settings";
+@import "system/form";
+@import "system/modal";
+@import "system/sprite";
+
+//section
+@import "section/header";
+@import "section/footer";
+@import "section/home";
+
+// Подключение своих SCSS файлов
+@import "my";

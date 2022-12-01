@@ -1,0 +1,261 @@
+.tooltip-inner {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  color: #2C3F52;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #FFFFFF;
+}
+
+.tooltip {
+  font-family: 'Arial';
+
+}
+
+.btn-primary {
+  background: #74C241;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+
+  &:hover {
+    background: $blue;
+  }
+}
+
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+  background: $pink;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  box-shadow: none;
+  background: $pink;
+  color: #FFFFFF;
+}
+
+
+.btn-outline-primary {
+
+  background: #FFFFFF;
+  border: 1px solid #0094DF;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #0094DF;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 5px 15px 5px 22px;
+
+  & span {
+    margin-left: 3px;
+    margin-top: 0;
+    vertical-align: text-top;
+  }
+
+  &:hover {
+
+  }
+
+  &:hover {
+
+  }
+}
+
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.btn-outline-primary:hover {
+  background-color: $pink;
+  border-color: $pink;
+  box-shadow: none;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: $green;
+  border-color: $green;
+
+}
+
+
+.text-muted {
+  color: #6B7886 !important;
+
+  & a {
+    color: #FF3B30;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:focus {
+      color: $pink;
+    }
+
+    &:active {
+      opacity: .7;
+    }
+  }
+}
+
+.list-circle {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+
+  & li {
+    margin-right: 10px;
+
+    &:first-child {
+      & a {
+        padding-left: 0;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & a {
+      position: relative;
+      color: #6B7886;
+      padding-left: 10px;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 2px;
+        background: #6B7886;
+      }
+
+      &:hover {
+        color: $blue;
+
+        &:before {
+          background: $blue;
+        }
+      }
+
+      &:focus {
+        color: $pink;
+
+        &:before {
+          background: $pink;
+        }
+      }
+
+      &:active {
+        opacity: .7;
+      }
+
+    }
+  }
+}
+
+
+.btn-link {
+  color: #0094DF;
+  padding: 5px 5px 5px 0;
+
+  &.collapsed {
+    & .icon {
+      transform: translateY(2px) rotate(-90deg);
+    }
+  }
+}
+
+.btn.focus, .btn:focus {
+  box-shadow: none;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  color: $pink;
+
+  & .icon {
+    &:before {
+      color: $pink;
+    }
+  }
+}
+
+.text-gray {
+  color: #ABB2BA;
+}
+
+.btn-link.focus, .btn-link:focus {
+  text-decoration: none;
+}
+
+
+
+
+
+.list-page {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+
+  & a {
+    padding: 5px;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: $pink;
+    }
+
+    &:focus {
+      color: $pink;
+    }
+
+    &:active {
+      opacity: .7;
+    }
+  }
+}
+
+//media
+@media (min-width: 768px) {
+  .btn-outline-primary {
+
+    padding: 7px 15px 7px 20px;
+  }
+}

@@ -1,0 +1,27 @@
+
+input::-webkit-input-placeholder {
+  color: $black;
+}
+input::-moz-placeholder {
+  color: $black;
+}
+input:-moz-placeholder {
+  color: $black;
+}
+input:-ms-input-placeholder {
+  color: $black;
+}
+textarea::-webkit-input-placeholder {
+  color: $black;
+}
+textarea::-moz-placeholder {
+  color: $black;
+}
+textarea:-moz-placeholder {
+  color: $black;
+}
+textarea:-ms-input-placeholder {
+  color: $black;
+}
+input:focus::-webkit-input-placeholder{color:transparent;transition:all .5s ease}input:focus::-moz-placeholder{color:transparent;transition:all .5s ease}input:focus:-moz-placeholder{color:transparent;transition:all .5s ease}input:focus:-ms-input-placeholder{color:transparent;transition:all .5s ease}textarea:focus::-webkit-input-placeholder{color:transparent;-webkit-transition:all .5s ease;-o-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}textarea:focus::-moz-placeholder{color:transparent;-webkit-transition:all .5s ease;-o-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}textarea:focus:-moz-placeholder{color:transparent;-webkit-transition:all .5s ease;-o-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}textarea:focus:-ms-input-placeholder{color:transparent;-webkit-transition:all .5s ease;-o-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease}
+

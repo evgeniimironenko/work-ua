@@ -1,0 +1,392 @@
+.header {
+  padding: 10px 0 13px 0;
+  position: relative;
+
+  border-image: linear-gradient(93.65deg, #DE216B -5.03%, #009FF4 103.91%, #8D4F9D 103.91%) 30;
+  border-width: 0 0 10px 0;
+  border-style: solid;
+
+  &__wrap {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 25px;
+
+    & .nav {
+      margin-left: auto;
+      margin-right: 23px;
+    }
+  }
+
+  & .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+  }
+
+  & .logo {
+    display: block;
+    text-align: center;
+    width: 150px;
+    margin-right: 20px;
+
+    &-big {
+      display: block;
+      width: 150px;
+      height: 29.5px;
+      margin-bottom: 10.75px;
+    }
+
+    &-text {
+      display: block;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 10px;
+      text-align: justify;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: $pink;
+      transition: .3s;
+    }
+
+    &-small {
+      display: none;
+    }
+
+    &:hover {
+      opacity: .7;
+
+      & .logo-text {
+        color: $blue;
+        transition: .3s;
+      }
+    }
+  }
+
+  & .nav {
+    &-item {
+
+    }
+
+    &-link {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: right;
+      color: $blue;
+
+      &:active {
+        opacity: .7;
+      }
+
+      &:hover {
+        color: $pink;
+      }
+
+      &:focus {
+        color: $pink;
+      }
+    }
+
+    &-icon {
+      display: none;
+    }
+  }
+
+  &__notification {
+    position: relative;
+
+    & .icon {
+      color: $blue;
+      font-size: 40px;
+      transition: .3s;
+    }
+
+    &_count {
+      left: 50%;
+      top: -2px;
+      position: absolute;
+      border-radius: 100px;
+      background: $pink;
+      text-align: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: $white;
+      padding: 3px 10px;
+      transition: .3s;
+    }
+
+    &:hover {
+      & .icon {
+        color: $pink;
+        transition: .3s;
+      }
+
+      & .header__notification_count {
+        background: $blue;
+      }
+    }
+
+    &:focus {
+      & .icon {
+        color: $pink;
+        transition: .3s;
+      }
+
+      & .header__notification_count {
+        background: $blue;
+      }
+    }
+
+    &:active {
+      opacity: .7;
+    }
+
+  }
+
+  &__link {
+    font-weight: 400;
+    color: #ABB2BA;
+    position: relative;
+    padding: 5px 15px 5px 10px;
+
+    &:after {
+      content: "\e902";
+      display: inline-block;
+      position: absolute;
+      right: -2px;
+      top: 8px;
+      font-family: 'icomoon' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:focus {
+      color: $pink;
+    }
+
+    &:active {
+      opacity: .7;
+    }
+  }
+}
+
+.dropdown-menu {
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #E9EBED;
+}
+
+
+.progress {
+  border-radius: 0;
+}
+
+.progress-bar {
+  border-radius: 0;
+  background: linear-gradient(93.65deg, #DE216B -5.03%, #009FF4 103.91%, #8D4F9D 103.91%);
+}
+
+
+.dropdown.dropdown-small {
+  margin-right: 10px;
+
+  &.show {
+    & .dropdown-toggle {
+      &:after {
+        transform: scale(-1);
+      }
+    }
+  }
+
+  & .dropdown-menu {
+    padding: 0;
+  }
+
+  & .dropdown-item {
+    padding: 10px 15px;
+    font-weight: 400;
+
+    &:first-child {
+      border-radius: 5px 5px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 5px 5px;
+    }
+
+
+  }
+
+  & .dropdown-toggle {
+    font-weight: 400;
+    color: #ABB2BA;
+    padding: 5px 15px 5px 0;
+    position: relative;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:focus {
+      color: $pink;
+    }
+
+    &:active {
+      opacity: .7;
+    }
+
+    &:after {
+      content: "\e900";
+      display: block;
+      box-sizing: border-box;
+      position: absolute;
+      width: 15px;
+      height: 20px;
+      margin: 0;
+      border: none;
+      right: -1px;
+      top: 5px;
+      font-family: 'icomoon' !important;
+    }
+  }
+
+  &.dropdown-small-blue {
+    .dropdown-toggle {
+      color: #0094DF;
+
+      &:hover {
+        color: $pink;
+      }
+
+      &:focus {
+        color: $pink;
+      }
+
+      &:active {
+        opacity: .7;
+      }
+    }
+  }
+}
+
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: $blue;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+//media
+
+@media (max-width: 992px) {
+  .header .logo {
+    width: 100px;
+  }
+  .header .logo-big {
+    width: 100px;
+    height: 23.5px;
+  }
+  .header .logo-text {
+    font-size: 6px;
+    text-align: center;
+  }
+  .header .nav-link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .header__wrap {
+    padding-right: 0;
+  }
+  .header__wrap .nav {
+    margin-right: 15px;
+  }
+  .header__notification .icon {
+    font-size: 35px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 8px 0 15px 0;
+
+    .dropdown.dropdown-small .dropdown-toggle {
+      font-size: 15px;
+      line-height: 17px;
+    }
+
+    .dropdown.dropdown-small {
+      margin-right: 20px;
+    }
+
+    .header__link {
+      font-size: 15px;
+      line-height: 17px;
+    }
+  }
+  .header .nav-link {
+    font-size: 0;
+    line-height: normal;
+    display: block;
+    text-align: center;
+    padding: 10px 10px 0 10px;
+
+    &:after {
+      content: attr(data-text);
+      display: block;
+      text-align: center;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 13px;
+      color: #0094DF;
+
+    }
+  }
+  .header__notification {
+    display: none;
+  }
+  .header .nav-icon {
+    font-size: 22px;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+  .header .logo-big {
+    display: none;
+  }
+  .header .logo-text {
+    display: none;
+  }
+  .header__wrap .nav {
+    margin-right: 0;
+  }
+  .header .logo {
+    width: 39px;
+  }
+  .header .logo-small {
+    display: block;
+    width: 39px;
+    height: 39px;
+  }
+}

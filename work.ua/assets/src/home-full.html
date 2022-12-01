@@ -1,0 +1,427 @@
+//= template/head.html
+
+//= template/header.html
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">Личный раздел</a>
+            </li>
+        </ol>
+    </nav>
+    <h1>
+        Вакансии и отклики
+        <button type="button" class="btn-tooltip" data-toggle="tooltip" data-placement="bottom"
+                title="Тут підказка">
+            <svg class="icon icon-info">
+                <use xlink:href="#icon-info"></use>
+            </svg>
+        </button>
+    </h1>
+    <div class="row d-flex align-items-center">
+        <div class="col-lg-6 d-lg-flex d-md-flex align-items-center mb-sm-3 mb-md-0 mb-3">
+            <a href="#" class="btn btn-primary">
+                Создать вакансию
+            </a>
+            <div class="plan">
+                Доступна
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="planDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        21 из 630 публикаций
+                    </button>
+                    <div class="dropdown-menu " aria-labelledby="planDropdown">
+                        <div class="dropdown-info">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        Standard Plus возобновляемая
+                                        <span>
+                                           до 14.03.2020
+                                    </span>
+                                    </td>
+                                    <td>
+                                        11 из 311
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Premium возобновлемая
+                                        <span>
+                                        до 14.03.2020
+                                    </span>
+                                    </td>
+                                    <td>
+                                        5
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Premium
+                                    </td>
+                                    <td>
+                                        309
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Анонимная возобновляемая
+                                        <span>
+                                          до 14.03.2020
+                                    </span>
+                                    </td>
+                                    <td>
+                                        5
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="dropdown-list">
+                            <li>
+                                <a href="#">
+                                    Подробнее о публикациях
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Купить публикации от 349 грн
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Купить пакеты услуг (публикации и доступ к базе резюме) от
+                                    390 грн
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center   justify-content-lg-end justify-content-md-end">
+            <div class="dropdown dropdown-small dropdown-small-blue">
+                <button class="dropdown-toggle" type="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                    Только размещенные
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item active" href="#">Только размещенные</a>
+                    <a class="dropdown-item" href="#">Все</a>
+                    <a class="dropdown-item" href="#">Неактивные</a>
+                </div>
+            </div>
+            <a href="#" class="page-search">
+                <svg class="icon icon-search">
+                    <use xlink:href="#icon-search"></use>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+    <div class="section">
+        <div id="accordion" class="accordion">
+            <div class="accordion__item">
+                <div class="accordion__heading" id="UserOne">
+                    <button class="btn btn-link" data-toggle="collapse"
+                            data-target="#ListOne"
+                            aria-expanded="true" aria-controls="ListOne">
+                        <span class="icon icon-down">
+                        </span>
+                        Валентина Кущ
+                        <button type="button" class="btn-tooltip" data-toggle="tooltip"
+                                data-placement="bottom"
+                                title="Тут підказка">
+                            <svg class="icon icon-info">
+                                <use xlink:href="#icon-info"></use>
+                            </svg>
+                        </button>
+                        <span class="text-gray">
+                                4
+                        </span>
+                    </button>
+                </div>
+                <div id="ListOne" class="accordion__body collapse show" aria-labelledby="UserOne"
+                     data-parent="#accordion">
+                    <div class="card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <h2>
+                                    <a href="#" class="link-stretch">
+                                        Бухгалтер з обліку<span
+                                            class="text-nowrap text-muted font-weight-normal">,  12 300 грн</span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Киев, вулиця Академіка Бутлерова, 1
+                                </p>
+                                <div class="card-info">
+                                    <div class="alert alert-warning">
+                                    <span class="icon icon-right">
+                                    </span>
+                                    </div>
+                                    <div class="alert alert-success">
+                                        Standard
+                                    </div>
+                                    <div class="text-muted">
+                                        20.02.20 – 13.03.20
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <ul class="list-circle">
+                                    <li>
+                                        <a href="#">
+                                            Подобрать резюме
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-premium">
+                                            Сделать Premium
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Обновить дату размещения
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div data-toggle="collapse" href="#collapseSub-1"
+                                             aria-expanded="false" aria-controls="collapseSub-1"
+                                             class="collapsed dropdown dropdown-small dropdown-small-blue">
+                                            <button class="dropdown-toggle">
+                                                Еще
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="collapse" id="collapseSub-1">
+                                        <ul class="list-circle">
+                                            <li>
+                                                <a href="#">
+                                                    Подобрать
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-premium">
+                                                    Сделать
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Обновить дату
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="card-responses">
+                            <div class="card-responses__count">
+                                217
+                            </div>
+                            <p>
+                                откликов
+                            </p>
+                            <div class="card-responses__new">
+                                9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <h2>
+                                    <a href="#" class="link-stretch">
+                                        Керівник департаменту маркетингових проєктів (Шевченківський район)
+                                    </a>
+                                    <span class="text-nowrap text-muted font-weight-normal">5 500 – 11 500 грн*</span>
+                                </h2>
+                            </div>
+                            <div class="card-body">
+
+                                <div class="card-info">
+                                    <p>
+                                        Киев
+                                    </p>
+                                    <div class="alert alert-secondary">
+                                        Тест
+                                    </div>
+                                    <div class="alert alert-info">
+                                        Автопродление
+                                    </div>
+
+                                </div>
+
+                                <div class="card-info">
+                                    <div class="alert alert-primary">
+                                        Standard Plus
+                                    </div>
+                                    <div class="alert-light">
+                                        <svg class="icon icon-lightning">
+                                            <use xlink:href="#icon-lightning"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="text-muted">
+                                        20.02.20 – 13.03.20
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="card-footer">
+                                <ul class="list-circle">
+                                    <li>
+                                        <a href="#">
+                                            Подобрать резюме
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-premium">
+                                            Сделать Premium
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Обновить дату размещения
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div data-toggle="collapse" href="#collapseSub-2"
+                                             aria-expanded="false" aria-controls="collapseSub-2"
+                                             class="collapsed dropdown dropdown-small dropdown-small-blue">
+                                            <button class="dropdown-toggle">
+                                                Еще
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="collapse" id="collapseSub-2">
+                                        <ul class="list-circle">
+                                            <li>
+                                                <a href="#">
+                                                    Подобрать
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-premium">
+                                                    Сделать
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Обновить дату
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="card-responses">
+                            <div class="card-responses__count">
+                                217
+                            </div>
+                            <p>
+                                откликов
+                            </p>
+                            <div class="card-responses__new">
+                                9
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion__item">
+                <div class="accordion__heading" id="UserTwo">
+                    <button class="btn btn-link" data-toggle="collapse"
+                            data-target="#ListTwo"
+                            aria-expanded="true" aria-controls="ListTwo">
+                        <span class="icon icon-down">
+                        </span>
+                        Березан Елена
+                        <button type="button" class="btn-tooltip" data-toggle="tooltip"
+                                data-placement="bottom"
+                                title="Тут підказка">
+                            <svg class="icon icon-info">
+                                <use xlink:href="#icon-info"></use>
+                            </svg>
+                        </button>
+                        <span class="text-gray">
+                          589
+                        </span>
+                    </button>
+                </div>
+                <div id="ListTwo" class="accordion__body collapse show" aria-labelledby="UserTwo"
+                     data-parent="#accordion">
+                    <div class="card">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <p>
+                                    У этого пользователя нет вакансий.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <div class="accordion__heading" id="UserThree">
+                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                            data-target="#ListThree"
+                            aria-expanded="false" aria-controls="ListThree">
+                        <span class="icon icon-down">
+                        </span>
+                        Бондарук Анжелика
+                        <button type="button" class="btn-tooltip" data-toggle="tooltip"
+                                data-placement="bottom"
+                                title="Тут підказка">
+                            <svg class="icon icon-info">
+                                <use xlink:href="#icon-info"></use>
+                            </svg>
+                        </button>
+                        <span class="text-gray">
+                          19
+                        </span>
+                    </button>
+                </div>
+                <div id="ListThree" class="accordion__body collapse " aria-labelledby="UserThree"
+                     data-parent="#accordion">
+                    <div class="card">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <p>
+                                    У этого пользователя нет вакансий.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6">
+                <a href="#" class="btn btn-primary">
+                    Создать вакансию
+                </a>
+            </div>
+            <div class="col-lg-6 text-lg-right text-md-right">
+                <a href="#" class="btn btn-link">
+                    Удаленные вакансии
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    //= template/footer.html
